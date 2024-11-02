@@ -1,13 +1,13 @@
 // Problem 1
 // floorFunction
-template<typename T>
-int floorFunction(T num)
+template<typename D>
+int floorFunction(D num)
 {
     return num;
 }
 // ceilingFunction
-template<typename T>
-int ceilingFunction(T num)
+template<typename M>
+int ceilingFunction(M num)
 {
     if(num==int(num))
     {
@@ -21,8 +21,8 @@ int ceilingFunction(T num)
 }
 // Problem 2x
 // swap_values
-template<typename T>
-void swap_values(T &a, T &b)
+template<typename F>
+void swap_values(F &a, F &b)
 {
     a=a+b;
     b=a-b;
