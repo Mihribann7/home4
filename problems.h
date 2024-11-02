@@ -1,6 +1,7 @@
 //Problem1
 // floorFunction
-int floorFucntion (double num) {
+template<typename T>
+int floorFucntion (T num) {
     return num;
 }
 //ceilingFunction
