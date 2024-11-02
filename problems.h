@@ -1,4 +1,8 @@
 //Problem1
+// floorFunction
+int floorFucntion (double num) {
+    return num;
+}
 //ceilingFunction
 template <typename T>
 int ceilingFunction(T num) {
@@ -11,10 +15,7 @@ int ceilingFunction(T num) {
     return int(num);
 }
 
-//floorFunction
-int floorFucntion (double num) {
-    return num;
-}
+
 
 //Problem2
 //swap_values
@@ -22,8 +23,6 @@ void swap_values(double a, double b) {
     a = a+b;
     b=a-b;
     a=a-b;
-    cout<<"a="<<a<<"\n";
-    cout<<"b="<<b<<"\n";
 }
 
 //Problem3
@@ -52,8 +51,8 @@ int decimalToBinary(int n) {
 //midvalue
 template <typename T>
 T midValue(T a, T b, T c) {
-    if (a > b && a < c)  return a;
-    if (b > a && b < c) return b;
+    if (a > b && a < c || b>a && a>c)  return a;
+    if (b > a && b < c || a>b && b>>c) return b;
     return c;
 }
 
