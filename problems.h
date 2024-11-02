@@ -55,5 +55,8 @@ T midValue(T a, T b, T c) {
     if (b > a && b < c || a>b && b>>c) return b;
     return c;
 }
+#ifndef PROBLEMS_H
+#define PROBLEMS_H
+#endif //PROBLEMS_H
 
 
