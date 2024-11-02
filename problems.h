@@ -1,28 +1,28 @@
 // Problem 1
 // floorFunction
-template<typename A>
-int floorFunction(A n)
+template<typename T>
+int floorFunction(T num)
 {
-    return n/1;
+    return num;
 }
 // ceilingFunction
-template<typename B>
-int ceilingFunction(B n)
+template<typename T>
+int ceilingFunction(T num)
 {
-    if(n==int(n))
+    if(num==int(num))
     {
-        return int(n);
+        return int(num);
     }
-    if(n>0)
+    if(num>0)
     {
-        return int(n)+1;
+        return int(num)+1;
     }
-    return int(n);
+    return int(num);
 }
 // Problem 2x
 // swap_values
-template<typename A>
-void swap_values(A &a, A &b)
+template<typename T>
+void swap_values(T &a, T &b)
 {
     a=a+b;
     b=a-b;
@@ -31,19 +31,18 @@ void swap_values(A &a, A &b)
 
 // Problem 3
 // multiply
-int multiply(int num1, int num2)
+int multiply(int a, int b)
 {
-    if(num2==0)
+    if(b==0)
     {
         return 0;
-    }num2--;
-    return num1+multiply(num1,num2);
+    }b--;
+    return a+multiply(a,b);
 }
 // Problem 4
 // digitSum
 int digitSum(int num)
 {
-    int sum = 0;
     if(num==0)
     {
         return 0;
